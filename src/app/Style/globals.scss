@@ -1,0 +1,18 @@
+//  All scss import hear
+
+@import "../Style/variables";
+@import "../Style/responsive";
+@import "../Style/reset";
+
+// Components & page css/ scss link hear
+
+@import "../../components/Navbar/menubar.scss";
+@import "../../components/Footer/footer.scss";
+@import "../../components/Banner/banner.scss";
+@import "../../components/Clients/clients.scss";
+@import "../../components/Team-member/Team_member.scss";
+@import "../../components/Blog/Blog.scss";
+@import "../../components/Work/work.scss";
+@import "../../components/Partners/Partners.scss";
+@import "../../components/Feedback/Feedback.scss";
+@import "../../components/Subscribe/Subscribe.scss";

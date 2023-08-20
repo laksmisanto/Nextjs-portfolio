@@ -1,0 +1,19 @@
+nav {
+  margin-top: 20px;
+  .navbar-nav {
+    a {
+      margin-right: 20px;
+      font-size: 18px;
+      font-weight: 400;
+      color: $white;
+      text-transform: capitalize;
+      transition: all 0.3s linear;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+}

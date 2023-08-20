@@ -1,0 +1,52 @@
+.team__member__section {
+  padding-bottom: 128px;
+  h3 {
+    font-size: 42px;
+    font-weight: 700;
+    color: $white;
+    padding-bottom: 66px;
+    span {
+      color: $yello;
+    }
+  }
+  .team__member__left__img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .team__member__content {
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+      color: $white;
+      padding-bottom: 24px;
+      span {
+        color: $yello;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: $gray;
+      line-height: 30px;
+      padding-bottom: 40px;
+    }
+    .team__member__btn {
+      button {
+        font-size: 20px;
+        font-weight: 700;
+        color: $main;
+        background: transparent;
+        padding: 18px 32px;
+        border: 1px solid $main;
+        transition: all linear 0.3s;
+        border-radius: 8px;
+        &:hover {
+          background: $white;
+        }
+      }
+    }
+  }
+}

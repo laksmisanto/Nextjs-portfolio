@@ -1,0 +1,14 @@
+.feedback__container {
+  margin-bottom: 120px;
+  .feedback__heading {
+    h3 {
+      font-size: 42px;
+      font-weight: 700;
+      color: $white;
+      padding: 0px 80px;
+      span {
+        color: $yello;
+      }
+    }
+  }
+}

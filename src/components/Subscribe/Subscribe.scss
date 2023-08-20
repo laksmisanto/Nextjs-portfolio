@@ -1,0 +1,35 @@
+.subscribe__container {
+  margin-bottom: 128px;
+  padding: 100px;
+  background: $main;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  .subscribe__heading {
+    h3 {
+      font-size: 42px;
+      font-weight: 700;
+      color: $white;
+    }
+  }
+  .subscribe__form {
+    padding: 8px;
+    width: 100%;
+    background: $white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 100%;
+      padding: 8px 12px;
+      font-size: 18px;
+      font-weight: 400;
+      color: #717171;
+    }
+    button {
+      padding: 8px 20px;
+      background: $main;
+      color: $white;
+      border-radius: 8px;
+    }
+  }
+}
