@@ -4,6 +4,7 @@ import teamimg from "../../assets/team-member.png";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import { motion } from "framer-motion";
+import Chart from "@/assets/svg/Chart";
 
 // If loading a variable font, you don't need to specify the font weight
 const montserrat = Montserrat({
@@ -31,6 +32,9 @@ const Teammembers = () => {
                   height={300}
                   alt="members image"
                 />
+                <div className="chart__list">
+                  <Chart />
+                </div>
               </div>
             </div>
             <div className="col-lg-6">

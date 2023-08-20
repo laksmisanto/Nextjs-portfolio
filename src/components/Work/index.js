@@ -4,6 +4,7 @@ import Image from "next/image";
 import bigWorkImg from "../../assets/bg-work-img.png";
 import work2 from "../../assets/work2.png";
 import work3 from "../../assets/work3.png";
+import PlayBtn from "@/assets/svg/PlayBtn";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -41,6 +42,9 @@ const Work = () => {
                     loading="lazy"
                     alt="big work image"
                   />
+                  <div className="play__btn">
+                    <PlayBtn />
+                  </div>
                 </div>
               </div>
               <div className="col-lg-5">

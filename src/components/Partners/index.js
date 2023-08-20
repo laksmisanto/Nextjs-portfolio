@@ -6,6 +6,7 @@ import logo4 from "@/assets/Docco-Semims.png";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import { DM_Sans } from "next/font/google";
+import { PartnerData } from "@/data/commonData";
 const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
@@ -30,47 +31,17 @@ const Partners = () => {
             </div>
           </div>
           <div className="partners__container">
-            <div className="row">
-              <div className="col-lg-3">
-                <div className="partner__list__item">
-                  <div className="partner__logo">
-                    <Image src={logo1} alt="Happy-Mart" />
-                  </div>
-                  <div className="partner__headline">
-                    <h4 className={dmSans.className}>Happy Mart</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3">
-                <div className="partner__list__item">
-                  <div className="partner__logo">
-                    <Image src={logo2} alt="Lori-Cracker" />
-                  </div>
-                  <div className="partner__headline">
-                    <h4 className={dmSans.className}>Lori Cracker</h4>
+            <div className="row align-items-center">
+              {PartnerData.map((item, i) => (
+                <div className="col-lg-3" key={i}>
+                  <div className="partner__list__item">
+                    <div className="partner__logo">{item.logo}</div>
+                    <div className="partner__headline">
+                      <h4 className={dmSans.className}>{item.tag}</h4>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-3">
-                <div className="partner__list__item">
-                  <div className="partner__logo">
-                    <Image src={logo3} alt="Emad-Fashion" />
-                  </div>
-                  <div className="partner__headline">
-                    <h4 className={dmSans.className}>Emad Fashion</h4>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3">
-                <div className="partner__list__item">
-                  <div className="partner__logo">
-                    <Image src={logo4} alt="Docco-Semims" />
-                  </div>
-                  <div className="partner__headline">
-                    <h4 className={dmSans.className}>Docco Semims</h4>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="partners__description">

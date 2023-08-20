@@ -1,4 +1,11 @@
-import Device from "@/assets/svg/Device";
+import DigitalMarketing from "@/assets/svg/DigitalMarketing";
+import GraphicsDesign from "@/assets/svg/GraphicsDesign";
+import UxDesign from "@/assets/svg/UxDesign";
+import WebDevelopment from "@/assets/svg/WebDevelopment";
+import Partner1 from "@/assets/svg/Partner1";
+import Partner2 from "@/assets/svg/Partner2";
+import Partner3 from "@/assets/svg/Partner3";
+import Partner4 from "@/assets/svg/Partner4";
 
 export const MenuData = [
   {
@@ -67,27 +74,46 @@ export const footerResourceData = [
 
 export const clientData = [
   {
-    icon: <Device />,
+    icon: <DigitalMarketing />,
     title: "Digital Marketting",
     desc: "Web applications provide a flexible solution thank to their plat independent",
     link: "Start Discovery",
   },
   {
-    icon: <Device />,
+    icon: <WebDevelopment />,
     title: "Web Development",
     desc: "Web applications provide a flexible solution thank to their plat independent",
     link: "Start Discovery",
   },
   {
-    icon: <Device />,
+    icon: <UxDesign />,
     title: "UI/UX Design",
     desc: "Web applications provide a flexible solution thank to their plat independent",
     link: "Start Discovery",
   },
   {
-    icon: <Device />,
+    icon: <GraphicsDesign />,
     title: "Graphic Design",
     desc: "Web applications provide a flexible solution thank to their plat independent",
     link: "Start Discovery",
+  },
+];
+
+export const PartnerData = [
+  {
+    logo: <Partner1 />,
+    tag: "Happy Mart",
+  },
+  {
+    logo: <Partner2 />,
+    tag: "Lori Cracker",
+  },
+  {
+    logo: <Partner3 />,
+    tag: "Emad Fashion",
+  },
+  {
+    logo: <Partner4 />,
+    tag: "Docco Semims",
   },
 ];

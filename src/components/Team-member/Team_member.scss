@@ -11,9 +11,15 @@
   }
   .team__member__left__img {
     width: 100%;
+    position: relative;
     img {
       width: 100%;
       height: auto;
+    }
+    .chart__list {
+      position: absolute;
+      top: -36px;
+      right: -36px;
     }
   }
   .team__member__content {

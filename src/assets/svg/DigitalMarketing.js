@@ -1,6 +1,6 @@
 import React from "react";
 
-const Device = () => {
+const DigitalMarketing = () => {
   return (
     <>
       <svg
@@ -82,4 +82,4 @@ const Device = () => {
   );
 };
 
-export default Device;
+export default DigitalMarketing;
