@@ -19,4 +19,45 @@
       margin-top: 24px;
     }
   }
+  .blog__slider {
+    margin-top: 48px;
+    .blog__slider__item {
+      .blog__item__content {
+        padding: 24px;
+        background: $black;
+        margin: 0 15px;
+        border-radius: 16px;
+        .blog__img {
+          width: 100%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        h4 {
+          font-size: 20px;
+          font-weight: 600;
+          color: $white;
+          padding: 24px 0;
+        }
+        .blog__item__footer {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: underline !important;
+            color: $white;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
 }

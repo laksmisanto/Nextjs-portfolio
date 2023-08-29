@@ -19,6 +19,8 @@
     "react-countup": "^6.4.2",
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
-    "sass": "^1.64.2"
+    "react-slick": "^0.29.0",
+    "sass": "^1.64.2",
+    "slick-carousel": "^1.8.1"
   }
 }

@@ -2,10 +2,15 @@ import DigitalMarketing from "@/assets/svg/DigitalMarketing";
 import GraphicsDesign from "@/assets/svg/GraphicsDesign";
 import UxDesign from "@/assets/svg/UxDesign";
 import WebDevelopment from "@/assets/svg/WebDevelopment";
+//our partner image
 import Partner1 from "@/assets/svg/Partner1";
 import Partner2 from "@/assets/svg/Partner2";
 import Partner3 from "@/assets/svg/Partner3";
 import Partner4 from "@/assets/svg/Partner4";
+//blog image
+import blog1 from "@/assets/blog1.png";
+import blog2 from "@/assets/blog2.png";
+import blog3 from "@/assets/blog3.png";
 
 export const MenuData = [
   {
@@ -115,5 +120,27 @@ export const PartnerData = [
   {
     logo: <Partner4 />,
     tag: "Docco Semims",
+  },
+];
+
+//Blog item Data
+export const BlogDataList = [
+  {
+    img: blog1,
+    title: "Bitcoin and Economic Freedom",
+    link: "Read More",
+    date: "10 January 2023",
+  },
+  {
+    img: blog2,
+    title: "Market and Economic Strategy",
+    link: "Read More",
+    date: "10 January 2023",
+  },
+  {
+    img: blog3,
+    title: "Digital and Economic Finance",
+    link: "Read More",
+    date: "10 January 2023",
   },
 ];
