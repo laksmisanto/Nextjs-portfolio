@@ -11,6 +11,11 @@ import Partner4 from "@/assets/svg/Partner4";
 import blog1 from "@/assets/blog1.png";
 import blog2 from "@/assets/blog2.png";
 import blog3 from "@/assets/blog3.png";
+import Quotation from "@/assets/svg/Quotation";
+//Feedback image
+import feedback1 from "@/assets/feedback1.png";
+import feedback2 from "@/assets/feedback2.png";
+import feedback3 from "@/assets/feedback3.png";
 
 export const MenuData = [
   {
@@ -142,5 +147,48 @@ export const BlogDataList = [
     title: "Digital and Economic Finance",
     link: "Read More",
     date: "10 January 2023",
+  },
+  {
+    img: blog2,
+    title: "Market and Economic Strategy",
+    link: "Read More",
+    date: "10 January 2023",
+  },
+];
+
+//About us item Data list
+
+export const FeedbackDataList = [
+  {
+    icon: <Quotation />,
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
+    img: feedback1,
+    name: "James Willy",
+    designation: "CEO GTEX",
+  },
+  {
+    icon: <Quotation />,
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
+    img: feedback2,
+    name: "James Willy",
+    designation: "CEO GTEX",
+  },
+  {
+    icon: <Quotation />,
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
+    name: "James Willy",
+    img: feedback3,
+    designation: "CEO GTEX",
+  },
+  {
+    icon: <Quotation />,
+    description:
+      "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.",
+    img: feedback2,
+    name: "James Willy",
+    designation: "CEO GTEX",
   },
 ];
