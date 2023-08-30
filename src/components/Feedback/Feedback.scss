@@ -14,13 +14,10 @@
   .feedback__slider {
     .slick-slider {
       .slick-list {
-        overflow-y: visible !important;
         .slick-track {
           .slick-current {
             .feedback__slider__item {
               .feedback__item__content {
-                overflow-y: visible;
-                transform: translateY(-40px);
                 background: $main;
                 .feedback__img {
                   svg {

@@ -63,8 +63,8 @@ const Work = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="row">
-                    <div className="col-lg-7">
+                  <div className="row row-gap-4">
+                    <div className="col-sm-12 col-lg-7">
                       <div className="work__right__sm__img">
                         <Image
                           src={work2}
@@ -75,7 +75,7 @@ const Work = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-sm-12 col-lg-5">
                       <div className="work__right__sm__img">
                         <Image
                           src={work3}
