@@ -4,8 +4,8 @@ import { Montserrat } from "next/font/google";
 import Slider from "react-slick";
 import { FeedbackDataList } from "@/data/commonData";
 import Image from "next/image";
-import Left from "@/assets/svg/Left";
-import Right from "@/assets/svg/Right";
+import PrevArrow from "../Arrow/PrevArrow";
+import NextArrow from "../Arrow/NextArrow";
 const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
@@ -18,6 +18,9 @@ const Feedback = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
     responsive: [
       {
         breakpoint: 1024,

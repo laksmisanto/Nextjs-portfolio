@@ -1,6 +1,6 @@
 .team__member__section {
   padding-bottom: 128px;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     padding-bottom: 80px;
   }
   h3 {
@@ -8,7 +8,7 @@
     font-weight: 700;
     color: $white;
     padding-bottom: 66px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       font-size: 25px;
       padding-bottom: 40px;
     }
@@ -27,7 +27,7 @@
       position: absolute;
       top: -36px;
       right: -36px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         display: none;
       }
     }
@@ -38,7 +38,7 @@
       font-weight: 700;
       color: $white;
       padding-bottom: 24px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         font-size: 20px;
         margin-top: 28px;
         padding-bottom: 15px;
@@ -53,14 +53,14 @@
       color: $gray;
       line-height: 30px;
       padding-bottom: 40px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         font-size: 14px;
         line-height: 24px;
         padding-bottom: 20px;
       }
     }
     .team__member__btn {
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         text-align: center;
       }
       button {
@@ -72,7 +72,7 @@
         border: 1px solid $main;
         transition: all linear 0.3s;
         border-radius: 8px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
           font-size: 16px;
           padding: 12px 24px;
           text-align: center;

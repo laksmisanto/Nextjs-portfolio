@@ -10,6 +10,8 @@ import Link from "next/link";
 
 import Image from "next/image";
 import { BlogDataList } from "@/data/commonData";
+import PrevArrow from "../Arrow/PrevArrow";
+import NextArrow from "../Arrow/NextArrow";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,6 +25,9 @@ const Blog = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    arrows: true,
+    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
     responsive: [
       {
         breakpoint: 1024,

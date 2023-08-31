@@ -1,11 +1,18 @@
 .feedback__container {
   margin-bottom: 120px;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 80px;
+  }
   .feedback__heading {
     h3 {
       font-size: 42px;
       font-weight: 700;
       color: $white;
       padding: 0px 80px;
+      @include media-breakpoint-down(sm) {
+        font-size: 28px;
+        padding: 0 20px;
+      }
       span {
         color: $yello;
       }
@@ -13,6 +20,56 @@
   }
   .feedback__slider {
     .slick-slider {
+      .prev__arrow {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $white;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 11;
+        bottom: -60px;
+        left: 45%;
+        transition: all 0.3s linear;
+        &:hover {
+          background: $main;
+        }
+        @include media-breakpoint-down(sm) {
+          left: 35%;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .next__arrow {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $white;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 11;
+        bottom: -60px;
+        left: 50%;
+        transition: all 0.3s linear;
+        &:hover {
+          background: $main;
+        }
+        @include media-breakpoint-down(sm) {
+          left: 50%;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
       .slick-list {
         .slick-track {
           .slick-current {
@@ -33,6 +90,9 @@
       }
     }
     margin-top: 90px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 40px;
+    }
     .feedback__slider__item {
       .feedback__item__content {
         padding: 36px;
@@ -40,14 +100,24 @@
         border: 1px solid $black;
         border-top-right-radius: 24px;
         border-bottom-left-radius: 24px;
+        @include media-breakpoint-down(sm) {
+          padding: 20px;
+        }
         .feedback__img {
           margin-bottom: 22px;
+          @include media-breakpoint-down(sm) {
+            margin-bottom: 14px;
+          }
         }
         p {
           font-size: 18px;
           font-weight: 400;
           line-height: 30px;
           color: $gray;
+          @include media-breakpoint-down(sm) {
+            font-size: 16px;
+            line-height: 25px;
+          }
         }
         .feedback__item__footer {
           width: 100%;
@@ -55,6 +125,9 @@
           align-items: center;
           justify-content: start;
           margin-top: 25px;
+          @include media-breakpoint-down(sm) {
+            margin-top: 14px;
+          }
           .advice__img {
             width: 40px;
             height: 40px;
@@ -70,11 +143,17 @@
               font-size: 20px;
               font-weight: 400;
               color: $gray;
+              @include media-breakpoint-down(sm) {
+                font-size: 18px;
+              }
             }
             p {
               font-size: 16px;
               font-weight: 400;
               color: $gray;
+              @include media-breakpoint-down(sm) {
+                font-size: 14px;
+              }
             }
           }
         }

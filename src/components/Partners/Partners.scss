@@ -1,19 +1,79 @@
 .partners__section {
   padding-bottom: 128px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 80px;
+  }
   .partners__title {
     padding-bottom: 40px;
     h3 {
       font-size: 48px;
       font-weight: 700;
       color: $white;
+      @include media-breakpoint-down(sm) {
+        font-size: 28px;
+      }
       span {
         color: $yello;
       }
     }
   }
   .partners__container {
-    padding-bottom: 40px;
+    padding-bottom: 80px;
+    position: relative;
+    .slick-slider {
+      .prev__arrow {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $white;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 11;
+        bottom: -60px;
+        left: 45%;
+        transition: all 0.3s linear;
+        &:hover {
+          background: $main;
+        }
+        @include media-breakpoint-down(sm) {
+          left: 35%;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .next__arrow {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $white;
+        cursor: pointer;
+        border-radius: 50%;
+        z-index: 11;
+        bottom: -60px;
+        left: 50%;
+        transition: all 0.3s linear;
+        &:hover {
+          background: $main;
+        }
+        @include media-breakpoint-down(sm) {
+          left: 50%;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
     .partner__item__wrapper {
+      margin: 0 15px;
       .partner__list__item {
         width: 100%;
         display: flex;
@@ -36,6 +96,9 @@
             font-size: 28px;
             font-weight: 700;
             color: $white;
+            @include media-breakpoint-down(sm) {
+              font-size: 16px;
+            }
           }
         }
       }
@@ -48,6 +111,10 @@
         font-weight: 300;
         color: $white;
         line-height: 30px;
+        @include media-breakpoint-down(sm) {
+          font-size: 16px;
+          list-style: 25px;
+        }
       }
     }
   }

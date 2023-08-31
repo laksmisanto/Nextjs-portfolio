@@ -4,7 +4,7 @@
   background: $main;
   border-top-right-radius: 24px;
   border-bottom-left-radius: 24px;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     margin-bottom: 80px;
     padding: 10px;
   }
@@ -13,7 +13,7 @@
       font-size: 42px;
       font-weight: 700;
       color: $white;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(sm) {
         font-size: 28px;
         padding-bottom: 20px;
       }
@@ -32,6 +32,10 @@
       font-size: 18px;
       font-weight: 400;
       color: #717171;
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+        padding: 4px 8px;
+      }
     }
     button {
       padding: 8px 20px;
