@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import logo1 from "@/assets/Happy-Mart.png";
 import logo2 from "@/assets/Lori-Cracker.png";
@@ -7,6 +9,41 @@ import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import { DM_Sans } from "next/font/google";
 import { PartnerData } from "@/data/commonData";
+import Slider from "react-slick";
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 const montserrat = Montserrat({
   subsets: ["latin"],
   display: "swap",
@@ -32,16 +69,18 @@ const Partners = () => {
           </div>
           <div className="partners__container">
             <div className="row align-items-center">
-              {PartnerData.map((item, i) => (
-                <div className="col-lg-3" key={i}>
-                  <div className="partner__list__item">
-                    <div className="partner__logo">{item.logo}</div>
-                    <div className="partner__headline">
-                      <h4 className={dmSans.className}>{item.tag}</h4>
+              <Slider {...settings}>
+                {PartnerData.map((item, i) => (
+                  <div className="partner__item__wrapper" key={i}>
+                    <div className="partner__list__item">
+                      <div className="partner__logo">{item.logo}</div>
+                      <div className="partner__headline">
+                        <h4 className={dmSans.className}>{item.tag}</h4>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </Slider>
             </div>
           </div>
           <div className="partners__description">

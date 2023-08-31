@@ -13,28 +13,30 @@
   }
   .partners__container {
     padding-bottom: 40px;
-    .partner__list__item {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .partner__logo {
-        width: 20%;
-        svg {
-          width: 100%;
-          height: auto;
+    .partner__item__wrapper {
+      .partner__list__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .partner__logo {
+          width: 20%;
+          svg {
+            width: 100%;
+            height: auto;
+          }
         }
-      }
-      .partner__headline {
-        width: 75%;
-        img {
-          width: 100%;
-          height: auto;
-        }
-        h4 {
-          font-size: 28px;
-          font-weight: 700;
-          color: $white;
+        .partner__headline {
+          width: 75%;
+          img {
+            width: 100%;
+            height: auto;
+          }
+          h4 {
+            font-size: 28px;
+            font-weight: 700;
+            color: $white;
+          }
         }
       }
     }

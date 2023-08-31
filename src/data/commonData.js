@@ -126,6 +126,14 @@ export const PartnerData = [
     logo: <Partner4 />,
     tag: "Docco Semims",
   },
+  {
+    logo: <Partner2 />,
+    tag: "Lori Cracker",
+  },
+  {
+    logo: <Partner3 />,
+    tag: "Emad Fashion",
+  },
 ];
 
 //Blog item Data
