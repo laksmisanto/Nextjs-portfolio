@@ -1,6 +1,6 @@
 .our__work {
   padding-bottom: 128px;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding-bottom: 80px;
   }
   .work__title {
@@ -9,6 +9,9 @@
       font-weight: 700;
       color: $white;
       padding-bottom: 24px;
+      @include media-breakpoint-down(md) {
+        font-size: 32px;
+      }
       @include media-breakpoint-down(sm) {
         font-size: 28px;
       }
@@ -24,6 +27,11 @@
       color: $gray;
       line-height: 30px;
       padding: 0px 60px;
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 10px;
+      }
       @include media-breakpoint-down(sm) {
         font-size: 14px;
         line-height: 24px;
@@ -55,7 +63,7 @@
       }
     }
     .work__right__content {
-      @include media-breakpoint-down(me) {
+      @include media-breakpoint-down(md) {
         margin-top: 20px;
       }
       .work__right__content__title {
@@ -72,6 +80,10 @@
           color: $white;
           padding-right: 240px;
           padding-bottom: 16px;
+          @include media-breakpoint-down(md) {
+            font-size: 22px;
+            padding-right: 20px;
+          }
           @include media-breakpoint-down(sm) {
             font-size: 20px;
             padding-right: 20px;
@@ -86,6 +98,11 @@
           line-height: 30px;
           color: $gray;
           padding-right: 60px;
+          @include media-breakpoint-down(md) {
+            font-size: 16px;
+            line-height: 28px;
+            padding-right: 0;
+          }
           @include media-breakpoint-down(sm) {
             font-size: 14px;
             line-height: 24px;

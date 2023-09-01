@@ -49,7 +49,7 @@ const Clients = () => {
               <div className="right__client">
                 <div className="row row-gap-4">
                   {clientData.map((item, i) => (
-                    <div className="col-lg-6" key={i}>
+                    <div className="col-sm-6 col-md-6 col-lg-6" key={i}>
                       <div className="right__client__item">
                         <i>{item.icon}</i>
                         <h4 className={montserrat.className}>{item.title}</h4>

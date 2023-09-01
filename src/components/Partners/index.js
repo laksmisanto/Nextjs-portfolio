@@ -38,15 +38,15 @@ const Partners = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 769,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 577,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,

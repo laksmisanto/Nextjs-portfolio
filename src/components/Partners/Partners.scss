@@ -1,6 +1,6 @@
 .partners__section {
   padding-bottom: 128px;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding-bottom: 80px;
   }
   .partners__title {
@@ -9,6 +9,9 @@
       font-size: 48px;
       font-weight: 700;
       color: $white;
+      @include media-breakpoint-down(md) {
+        font-size: 32px;
+      }
       @include media-breakpoint-down(sm) {
         font-size: 28px;
       }
@@ -38,6 +41,9 @@
         &:hover {
           background: $main;
         }
+        @include media-breakpoint-down(md) {
+          left: 40%;
+        }
         @include media-breakpoint-down(sm) {
           left: 35%;
         }
@@ -62,6 +68,9 @@
         transition: all 0.3s linear;
         &:hover {
           background: $main;
+        }
+        @include media-breakpoint-down(md) {
+          left: 53%;
         }
         @include media-breakpoint-down(sm) {
           left: 50%;
@@ -96,6 +105,9 @@
             font-size: 28px;
             font-weight: 700;
             color: $white;
+            @include media-breakpoint-down(md) {
+              font-size: 22px;
+            }
             @include media-breakpoint-down(sm) {
               font-size: 16px;
             }
@@ -111,6 +123,10 @@
         font-weight: 300;
         color: $white;
         line-height: 30px;
+        @include media-breakpoint-down(md) {
+          font-size: 18px;
+          list-style: 28px;
+        }
         @include media-breakpoint-down(sm) {
           font-size: 16px;
           list-style: 25px;

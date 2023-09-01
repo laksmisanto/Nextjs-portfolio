@@ -4,6 +4,10 @@
   background: $main;
   border-top-right-radius: 24px;
   border-bottom-left-radius: 24px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 80px;
+    padding: 20px;
+  }
   @include media-breakpoint-down(sm) {
     margin-bottom: 80px;
     padding: 10px;
@@ -13,6 +17,10 @@
       font-size: 42px;
       font-weight: 700;
       color: $white;
+      @include media-breakpoint-down(md) {
+        font-size: 30px;
+        padding-bottom: 40px;
+      }
       @include media-breakpoint-down(sm) {
         font-size: 28px;
         padding-bottom: 20px;
@@ -29,11 +37,11 @@
     input {
       width: 100%;
       padding: 8px 12px;
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 400;
       color: #717171;
       @include media-breakpoint-down(sm) {
-        font-size: 16px;
+        font-size: 15px;
         padding: 4px 8px;
       }
     }

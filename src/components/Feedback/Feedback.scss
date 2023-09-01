@@ -1,6 +1,6 @@
 .feedback__container {
   margin-bottom: 120px;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     margin-bottom: 80px;
   }
   .feedback__heading {
@@ -9,6 +9,10 @@
       font-weight: 700;
       color: $white;
       padding: 0px 80px;
+      @include media-breakpoint-down(md) {
+        font-size: 32px;
+        padding: 0 20px;
+      }
       @include media-breakpoint-down(sm) {
         font-size: 28px;
         padding: 0 20px;
@@ -37,6 +41,9 @@
         &:hover {
           background: $main;
         }
+        @include media-breakpoint-down(md) {
+          left: 38%;
+        }
         @include media-breakpoint-down(sm) {
           left: 35%;
         }
@@ -61,6 +68,9 @@
         transition: all 0.3s linear;
         &:hover {
           background: $main;
+        }
+        @include media-breakpoint-down(md) {
+          left: 54%;
         }
         @include media-breakpoint-down(sm) {
           left: 50%;
@@ -90,7 +100,7 @@
       }
     }
     margin-top: 90px;
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-top: 40px;
     }
     .feedback__slider__item {
@@ -100,6 +110,9 @@
         border: 1px solid $black;
         border-top-right-radius: 24px;
         border-bottom-left-radius: 24px;
+        @include media-breakpoint-down(md) {
+          padding: 25px;
+        }
         @include media-breakpoint-down(sm) {
           padding: 20px;
         }
@@ -114,9 +127,9 @@
           font-weight: 400;
           line-height: 30px;
           color: $gray;
-          @include media-breakpoint-down(sm) {
+          @include media-breakpoint-down(md) {
             font-size: 16px;
-            line-height: 25px;
+            line-height: 28px;
           }
         }
         .feedback__item__footer {
@@ -134,7 +147,6 @@
             img {
               width: 100%;
               height: 100%;
-              // object-fit: cover;
             }
           }
           .advice__info {
@@ -143,7 +155,7 @@
               font-size: 20px;
               font-weight: 400;
               color: $gray;
-              @include media-breakpoint-down(sm) {
+              @include media-breakpoint-down(md) {
                 font-size: 18px;
               }
             }
@@ -151,7 +163,7 @@
               font-size: 16px;
               font-weight: 400;
               color: $gray;
-              @include media-breakpoint-down(sm) {
+              @include media-breakpoint-down(md) {
                 font-size: 14px;
               }
             }

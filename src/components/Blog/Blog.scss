@@ -1,6 +1,6 @@
 .blog__container {
   margin-bottom: 120px;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     margin-bottom: 80px;
   }
   .blog__heading {
@@ -9,6 +9,10 @@
       font-weight: 700;
       color: $white;
       padding: 0px 80px;
+      @include media-breakpoint-down(md) {
+        font-size: 32px;
+        padding: 0 60px;
+      }
       @include media-breakpoint-down(sm) {
         font-size: 28px;
         padding: 0 20px;
@@ -24,6 +28,12 @@
       line-height: 30px;
       padding: 0px 20px;
       margin-top: 24px;
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 10px;
+        margin-top: 14px;
+      }
       @include media-breakpoint-down(sm) {
         font-size: 14px;
         line-height: 24px;
@@ -53,6 +63,9 @@
         &:hover {
           background: $main;
         }
+        @include media-breakpoint-down(md) {
+          left: 38%;
+        }
         @include media-breakpoint-down(sm) {
           left: 35%;
         }
@@ -78,6 +91,9 @@
         &:hover {
           background: $main;
         }
+        @include media-breakpoint-down(md) {
+          left: 54%;
+        }
         @include media-breakpoint-down(sm) {
           left: 50%;
         }
@@ -93,6 +109,9 @@
         background: $black;
         margin: 0 15px;
         border-radius: 16px;
+        @include media-breakpoint-down(md) {
+          padding: 15px;
+        }
         @include media-breakpoint-down(sm) {
           padding: 12px;
         }
@@ -108,7 +127,7 @@
           font-weight: 600;
           color: $white;
           padding: 24px 0;
-          @include media-breakpoint-down(sm) {
+          @include media-breakpoint-down(md) {
             font-size: 18px;
             padding: 12px 0;
           }
@@ -123,16 +142,16 @@
             font-weight: 400;
             text-decoration: underline !important;
             color: $white;
-            @include media-breakpoint-down(sm) {
-              font-size: 14px;
+            @include media-breakpoint-down(md) {
+              font-size: 15px;
             }
           }
           p {
             font-size: 16px;
             font-weight: 400;
             color: $white;
-            @include media-breakpoint-down(sm) {
-              font-size: 14px;
+            @include media-breakpoint-down(md) {
+              font-size: 15px;
             }
           }
         }

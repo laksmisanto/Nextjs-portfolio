@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-sm-6 col-lg-3">
               <div className="footer__service">
                 <div className="footer__service__title">
                   <h3 className={montserrat.className}>Services</h3>
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-sm-6 col-lg-3">
               <div className="footer__resource">
                 <div className="footer__resource__title">
                   <h3 className={montserrat.className}>Resources</h3>

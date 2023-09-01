@@ -1,7 +1,7 @@
 .banner {
   padding-top: 85px;
   padding-bottom: 128px;
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding-top: 60px;
     padding-bottom: 80px;
   }
@@ -14,6 +14,9 @@
       span {
         color: $yello;
       }
+      @include media-breakpoint-down(md) {
+        font-size: 40px;
+      }
       @include media-breakpoint-down(sm) {
         font-size: 28px;
       }
@@ -25,9 +28,9 @@
       color: $gray;
       padding: 0px 60px;
       margin-bottom: 40px !important;
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         font-size: 16px;
-        line-height: 25px;
+        line-height: 28px;
         padding: 0px 10px;
       }
     }
