@@ -32,7 +32,7 @@ footer.footer__section {
         font-size: 20px;
         color: $white;
         padding-bottom: 40px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           padding-bottom: 20px;
         }
         @include media-breakpoint-down(sm) {
@@ -48,7 +48,7 @@ footer.footer__section {
         line-height: 45px;
         font-size: 18px;
         color: $white;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           font-size: 16px;
           line-height: 36px;
         }
@@ -65,7 +65,7 @@ footer.footer__section {
         font-size: 20px;
         color: $white;
         padding-bottom: 40px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           padding-bottom: 20px;
         }
         @include media-breakpoint-down(sm) {
@@ -82,7 +82,7 @@ footer.footer__section {
         line-height: 45px;
         font-size: 18px;
         color: $white;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           font-size: 16px;
           line-height: 36px;
         }
@@ -102,6 +102,9 @@ footer.footer__section {
         font-size: 20px;
         color: $white;
         padding-bottom: 40px;
+        @include media-breakpoint-down(lg) {
+          padding-bottom: 20px;
+        }
         @include media-breakpoint-down(md) {
           padding-top: 20px;
           padding-bottom: 20px;
@@ -119,6 +122,10 @@ footer.footer__section {
         color: $white;
         line-height: 30px;
         padding-bottom: 40px;
+        @include media-breakpoint-down(lg) {
+          font-size: 16px;
+          line-height: 25px;
+        }
         @include media-breakpoint-down(sm) {
           font-size: 14px;
           line-height: 25px;
@@ -184,11 +191,19 @@ footer.footer__section {
         align-items: center;
         cursor: pointer;
         transition: all linear 0.3s;
+        @include media-breakpoint-down(xl) {
+          width: 40px;
+          height: 40px;
+        }
         @include media-breakpoint-down(sm) {
           width: 38px;
           height: 38px;
         }
         svg {
+          @include media-breakpoint-down(xl) {
+            width: 20px;
+            height: 20px;
+          }
           @include media-breakpoint-down(sm) {
             width: 20px;
             height: 20px;

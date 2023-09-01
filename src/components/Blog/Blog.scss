@@ -1,5 +1,8 @@
 .blog__container {
   margin-bottom: 120px;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 85px;
+  }
   @include media-breakpoint-down(md) {
     margin-bottom: 80px;
   }
@@ -9,6 +12,14 @@
       font-weight: 700;
       color: $white;
       padding: 0px 80px;
+      @include media-breakpoint-down(xl) {
+        font-size: 36px;
+        padding: 0 20px;
+      }
+      @include media-breakpoint-down(lg) {
+        font-size: 36px;
+        padding: 0 136px;
+      }
       @include media-breakpoint-down(md) {
         font-size: 32px;
         padding: 0 60px;
@@ -28,6 +39,7 @@
       line-height: 30px;
       padding: 0px 20px;
       margin-top: 24px;
+
       @include media-breakpoint-down(md) {
         font-size: 16px;
         line-height: 28px;
@@ -63,6 +75,9 @@
         &:hover {
           background: $main;
         }
+        @include media-breakpoint-down(lg) {
+          left: 42%;
+        }
         @include media-breakpoint-down(md) {
           left: 38%;
         }
@@ -91,6 +106,9 @@
         &:hover {
           background: $main;
         }
+        @include media-breakpoint-down(lg) {
+          left: 52%;
+        }
         @include media-breakpoint-down(md) {
           left: 54%;
         }
@@ -109,6 +127,12 @@
         background: $black;
         margin: 0 15px;
         border-radius: 16px;
+        @include media-breakpoint-down(xl) {
+          padding: 16px;
+        }
+        @include media-breakpoint-down(lg) {
+          padding: 18px;
+        }
         @include media-breakpoint-down(md) {
           padding: 15px;
         }
@@ -127,6 +151,10 @@
           font-weight: 600;
           color: $white;
           padding: 24px 0;
+          @include media-breakpoint-down(lg) {
+            font-size: 19px;
+            padding: 12px 0;
+          }
           @include media-breakpoint-down(md) {
             font-size: 18px;
             padding: 12px 0;

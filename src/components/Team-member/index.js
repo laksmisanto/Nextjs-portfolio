@@ -24,7 +24,7 @@ const Teammembers = () => {
             </div>
           </div>
           <div className="row justify-content-between">
-            <div className="col-lg-5">
+            <div className="col-md-5 col-lg-5">
               <div className="team__member__left__img">
                 <Image
                   src={teamimg}
@@ -37,7 +37,7 @@ const Teammembers = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-md-7 col-lg-6">
               <div className="team__member__content">
                 <h4 className={montserrat.className}>
                   What provide to <span>our client</span>

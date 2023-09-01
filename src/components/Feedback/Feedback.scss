@@ -1,14 +1,24 @@
 .feedback__container {
   margin-bottom: 120px;
-  @include media-breakpoint-down(md) {
+
+  @include media-breakpoint-down(lg) {
     margin-bottom: 80px;
   }
+
   .feedback__heading {
     h3 {
       font-size: 42px;
       font-weight: 700;
       color: $white;
       padding: 0px 80px;
+      @include media-breakpoint-down(xl) {
+        font-size: 38px;
+        padding: 0 20px;
+      }
+      @include media-breakpoint-down(lg) {
+        font-size: 36px;
+        padding: 0 20px;
+      }
       @include media-breakpoint-down(md) {
         font-size: 32px;
         padding: 0 20px;
@@ -23,6 +33,13 @@
     }
   }
   .feedback__slider {
+    margin-top: 90px;
+    @include media-breakpoint-down(xl) {
+      margin-top: 60px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 40px;
+    }
     .slick-slider {
       .prev__arrow {
         position: absolute;
@@ -40,6 +57,9 @@
         transition: all 0.3s linear;
         &:hover {
           background: $main;
+        }
+        @include media-breakpoint-down(lg) {
+          left: 42%;
         }
         @include media-breakpoint-down(md) {
           left: 38%;
@@ -68,6 +88,9 @@
         transition: all 0.3s linear;
         &:hover {
           background: $main;
+        }
+        @include media-breakpoint-down(lg) {
+          left: 52%;
         }
         @include media-breakpoint-down(md) {
           left: 54%;
@@ -99,10 +122,7 @@
         }
       }
     }
-    margin-top: 90px;
-    @include media-breakpoint-down(md) {
-      margin-top: 40px;
-    }
+
     .feedback__slider__item {
       .feedback__item__content {
         padding: 36px;
@@ -110,6 +130,12 @@
         border: 1px solid $black;
         border-top-right-radius: 24px;
         border-bottom-left-radius: 24px;
+        @include media-breakpoint-down(xl) {
+          padding: 14px;
+        }
+        @include media-breakpoint-down(lg) {
+          padding: 30px;
+        }
         @include media-breakpoint-down(md) {
           padding: 25px;
         }

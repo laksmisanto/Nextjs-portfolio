@@ -18,14 +18,14 @@ const Subscribe = () => {
       <div className="container">
         <div className="subscribe__container">
           <div className="row justify-content-between align-items-center">
-            <div className="col-lg-6">
+            <div className="col-md-6 col-lg-6">
               <div className="subscribe__heading">
                 <h3 className={montserrat.className}>
                   Subscribe to Our Newsletter
                 </h3>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-md-6 col-lg-5">
               <div className="subscribe__form">
                 <input
                   type="email"

@@ -20,8 +20,8 @@ const Footer = () => {
     <>
       <footer className="footer__section">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-3">
+          <div className="row row-gap-4">
+            <div className="col-md-6 col-lg-3">
               <div className="short__info__footer">
                 <Link href="/">
                   <Image src={Logo} loading="lazy" alt="Footer-Logo" />
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-3">
+            <div className="col-sm-6 col-md-6 col-lg-3">
               <div className="footer__service">
                 <div className="footer__service__title">
                   <h3 className={montserrat.className}>Services</h3>
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-3">
+            <div className="col-sm-6 col-md-6 col-lg-3">
               <div className="footer__resource">
                 <div className="footer__resource__title">
                   <h3 className={montserrat.className}>Resources</h3>
@@ -70,7 +70,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-md-6 col-lg-3">
               <div className="footer__newslatter">
                 <div className="footer__newslatter__title">
                   <h3 className={montserrat.className}>Newsletter</h3>

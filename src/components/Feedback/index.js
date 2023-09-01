@@ -23,10 +23,10 @@ const Feedback = () => {
     nextArrow: <NextArrow />,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 993,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 2,
+          slidesToScroll: 1,
           infinite: true,
           dots: false,
         },
