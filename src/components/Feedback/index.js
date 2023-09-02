@@ -74,8 +74,8 @@ const Feedback = () => {
                         <div className="advice__img">
                           <Image
                             src={item.img}
-                            width={40}
-                            height={40}
+                            width={60}
+                            height={60}
                             alt="Feedback image"
                           />
                         </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
-import bigWorkImg from "../../assets/bg-work-img.png";
-import work2 from "../../assets/work2.png";
-import work3 from "../../assets/work3.png";
+import bigWorkImg from "../../assets/work1.webp";
+import work2 from "../../assets/work2.webp";
+import work3 from "../../assets/work3.webp";
 import PlayBtn from "@/assets/svg/PlayBtn";
 
 const montserrat = Montserrat({
@@ -37,8 +37,8 @@ const Work = () => {
                 <div className="work__big__img">
                   <Image
                     src={bigWorkImg}
-                    width={300}
-                    height={300}
+                    width={800}
+                    height={400}
                     loading="lazy"
                     alt="big work image"
                   />
@@ -68,8 +68,8 @@ const Work = () => {
                       <div className="work__right__sm__img">
                         <Image
                           src={work2}
-                          width={100}
-                          height={100}
+                          width={400}
+                          height={200}
                           loading="lazy"
                           alt="Work image"
                         />
@@ -79,8 +79,8 @@ const Work = () => {
                       <div className="work__right__sm__img">
                         <Image
                           src={work3}
-                          width={100}
-                          height={100}
+                          width={400}
+                          height={300}
                           loading="lazy"
                           alt="Work image"
                         />

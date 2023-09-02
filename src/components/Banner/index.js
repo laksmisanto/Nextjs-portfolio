@@ -3,7 +3,7 @@ import React from "react";
 import { Montserrat } from "next/font/google";
 import { DM_Sans } from "next/font/google";
 import Image from "next/image";
-import bannerimage from "../../assets/banner-img.png";
+import bannerimage from "../../assets/banner.webp";
 import { motion } from "framer-motion";
 
 // If loading a variable font, you don't need to specify the font weight
@@ -52,8 +52,8 @@ const Banner = () => {
               <div className="banner__img">
                 <Image
                   src={bannerimage}
-                  width={300}
-                  height={300}
+                  width={1200}
+                  height={800}
                   loading="lazy"
                   alt="banner image"
                 />

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import teamimg from "../../assets/team-member.png";
+import teamimg from "../../assets/team-member.webp";
 import Image from "next/image";
 import { Montserrat } from "next/font/google";
 import { motion } from "framer-motion";
@@ -28,8 +28,8 @@ const Teammembers = () => {
               <div className="team__member__left__img">
                 <Image
                   src={teamimg}
-                  width={300}
-                  height={300}
+                  width={800}
+                  height={800}
                   alt="members image"
                 />
                 <div className="chart__list">

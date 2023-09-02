@@ -8,14 +8,14 @@ import Partner2 from "@/assets/svg/Partner2";
 import Partner3 from "@/assets/svg/Partner3";
 import Partner4 from "@/assets/svg/Partner4";
 //blog image
-import blog1 from "@/assets/blog1.png";
-import blog2 from "@/assets/blog2.png";
-import blog3 from "@/assets/blog3.png";
+import blog1 from "@/assets/blog1.webp";
+import blog2 from "@/assets/blog2.webp";
+import blog3 from "@/assets/blog3.webp";
 import Quotation from "@/assets/svg/Quotation";
 //Feedback image
-import feedback1 from "@/assets/feedback1.png";
-import feedback2 from "@/assets/feedback2.png";
-import feedback3 from "@/assets/feedback3.png";
+import feedback1 from "@/assets/feedback1.webp";
+import feedback2 from "@/assets/feedback2.webp";
+import feedback3 from "@/assets/feedback3.webp";
 
 export const MenuData = [
   {

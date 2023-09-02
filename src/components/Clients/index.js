@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Montserrat } from "next/font/google";
-import clientimg from "../../assets/client.png";
+import clientimg from "../../assets/client.webp";
 import Image from "next/image";
 import { clientData } from "@/data/commonData";
 import Link from "next/link";
@@ -33,8 +33,8 @@ const Clients = () => {
                 <div className="client__left__img">
                   <Image
                     src={clientimg}
-                    width={200}
-                    height={300}
+                    width={900}
+                    height={800}
                     alt="client image"
                     loading="lazy"
                   />

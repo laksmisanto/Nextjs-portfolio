@@ -82,8 +82,8 @@ const Blog = () => {
                       <div className="blog__img">
                         <Image
                           src={item.img}
-                          width={300}
-                          height={200}
+                          width={600}
+                          height={400}
                           alt="blog image"
                         />
                       </div>
