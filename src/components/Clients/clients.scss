@@ -13,9 +13,19 @@
       justify-content: center;
       align-items: center;
     }
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
     .client__heading {
       @include media-breakpoint-down(lg) {
         width: 49%;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100%;
       }
       h3 {
         font-size: 42px;
@@ -86,6 +96,9 @@
     .client__left__img {
       @include media-breakpoint-down(lg) {
         width: 49%;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100%;
       }
       width: 100%;
       position: relative;
